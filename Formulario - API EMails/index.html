@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nathan Menezes">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/921/921490.png" type="image/x-icon">
+    <title>Titulo Guia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="form">
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="email" placeholder="Email ID" required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="button" onclick="sendMail()">Send</button>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("RgZRALJ5nLeXNPDgp");
+        })();
+    </script>
+</body>
+
+</html>
